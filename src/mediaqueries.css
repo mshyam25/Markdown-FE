@@ -71,6 +71,9 @@
   .container {
     width: 48rem;
   }
+  .form-container {
+    width: 100%;
+  }
 
   .notes-box {
     grid-template-columns: 1fr;
@@ -106,13 +109,13 @@
     height: 25rem;
   }
   html {
-    font-size: 35%;
+    font-size: 42%;
   }
 }
 /* BELOW 290px (Phones) */
 
 @media (max-width: 17rem) {
   html {
-    font-size: 30%;
+    font-size: 35%;
   }
 }

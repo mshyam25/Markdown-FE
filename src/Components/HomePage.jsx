@@ -4,7 +4,7 @@ const HomePage = () => {
   return (
     <div className='container flex-col'>
       <span className='primary-text'>
-        Here are few tips to help you with the markdown Syntax.
+        Here are few tips to help you with the Markdown Syntax.
       </span>
 
       <table className='home-table'>
