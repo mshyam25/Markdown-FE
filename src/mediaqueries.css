@@ -69,7 +69,7 @@
 
 @media (max-width: 37rem) {
   .container {
-    width: 50rem;
+    width: 48rem;
   }
 
   .notes-box {
@@ -104,5 +104,15 @@
   .markdown {
     gap: 1.2rem;
     height: 25rem;
+  }
+  html {
+    font-size: 35%;
+  }
+}
+/* BELOW 290px (Phones) */
+
+@media (max-width: 17rem) {
+  html {
+    font-size: 30%;
   }
 }

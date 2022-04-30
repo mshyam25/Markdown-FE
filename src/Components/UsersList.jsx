@@ -26,7 +26,7 @@ const UsersList = () => {
         <span>Users</span>
         {loading && <Loader />}
         {users && (
-          <Table striped bordered hover>
+          <Table striped bordered hover variant='dark'>
             <thead>
               <tr>
                 <th>#</th>

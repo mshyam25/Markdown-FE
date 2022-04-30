@@ -198,3 +198,31 @@
 .footer-text {
   font-size: 1.6rem;
 }
+
+.home-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.home-table td,
+.home-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center !important;
+}
+
+.home-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.home-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.home-table tr:hover {
+  background-color: #ddd;
+}

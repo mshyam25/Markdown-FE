@@ -12,12 +12,13 @@ import ViewNote from './Components/ViewNote'
 import UsersList from './Components/UsersList'
 import NotesList from './Components/NotesList'
 import Footer from './Components/Footer'
+import HomePage from './Components/HomePage'
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path='/' element={<h1>Home Page</h1>} />
+        <Route path='/' element={<HomePage />} />
         <Route path='/signin' element={<Signin />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/createmarkdown' element={<MarkdownArea />} />
