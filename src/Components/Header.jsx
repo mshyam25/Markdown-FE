@@ -26,23 +26,25 @@ const Header = () => {
             {userInfo && userInfo.isAdmin ? (
               <NavDropdown title={userInfo.name} id='basic-nav-dropdown'>
                 <NavDropdown.Item href={`/profile/${userInfo._id}`}>
-                  Profile
+                  <h3>Profile</h3>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href='/userslist'>Users</NavDropdown.Item>
+                <NavDropdown.Item href='/userslist'>
+                  <h3>Users</h3>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href='/noteslist'>
-                  User Notes
+                  <h3>Notes</h3>
                 </NavDropdown.Item>
               </NavDropdown>
             ) : userInfo && !userInfo.isAdmin ? (
               <NavDropdown title={userInfo.name} id='basic-nav-dropdown'>
                 <NavDropdown.Item href={`/profile/${userInfo._id}`}>
-                  Profile
+                  <h3>Profile</h3>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href={`/usernotes/${userInfo._id}`}>
-                  Notes
+                  <h3>My Notes</h3>
                 </NavDropdown.Item>
               </NavDropdown>
             ) : (

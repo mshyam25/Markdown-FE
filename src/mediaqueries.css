@@ -71,8 +71,10 @@
   .container {
     width: 50rem;
   }
-  .grid {
+
+  .notes-box {
     grid-template-columns: 1fr;
+    gap: 1.4rem;
   }
 
   .secondary-heading {

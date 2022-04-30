@@ -35,7 +35,7 @@ const SignIn = () => {
         values.password = ''
       },
     })
-
+  const textFieldStyles = { style: { fontSize: 14 } }
   useEffect(() => {
     if (userInfo) {
       setTimeout(() => {
@@ -63,6 +63,8 @@ const SignIn = () => {
 
             <form onSubmit={handleSubmit} className='form-container'>
               <TextField
+                InputProps={textFieldStyles}
+                InputLabelProps={textFieldStyles}
                 id='email'
                 name='email'
                 value={values.email}
@@ -76,6 +78,8 @@ const SignIn = () => {
                 {errors.email && touched.email ? errors.email : ''}
               </span>
               <TextField
+                InputProps={textFieldStyles}
+                InputLabelProps={textFieldStyles}
                 id='password'
                 name='password'
                 type='password'

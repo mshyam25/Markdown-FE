@@ -27,7 +27,7 @@ const Signup = () => {
     error: errorRegistered,
     userInfo: userRegistered,
   } = userRegister
-
+  const textFieldStyles = { style: { fontSize: 14 } }
   const formValidation = yup.object({
     name: yup
       .string()
@@ -95,6 +95,8 @@ const Signup = () => {
             <span className='secondary-heading'>New User ? Register here.</span>
             <form onSubmit={handleSubmit} className='form-container'>
               <TextField
+                InputProps={textFieldStyles}
+                InputLabelProps={textFieldStyles}
                 id='name'
                 name='name'
                 value={values.name}
@@ -106,6 +108,8 @@ const Signup = () => {
               />
               <span>{errors.name && touched.name ? errors.name : ''}</span>
               <TextField
+                InputProps={textFieldStyles}
+                InputLabelProps={textFieldStyles}
                 id='email'
                 name='email'
                 value={values.email}
@@ -117,6 +121,8 @@ const Signup = () => {
               />
               <span>{errors.email && touched.email ? errors.email : ''}</span>
               <TextField
+                InputProps={textFieldStyles}
+                InputLabelProps={textFieldStyles}
                 id='password'
                 name='password'
                 type='password'
@@ -131,6 +137,8 @@ const Signup = () => {
                 {errors.password && touched.password ? errors.password : ''}
               </span>
               <TextField
+                InputProps={textFieldStyles}
+                InputLabelProps={textFieldStyles}
                 id='confirmpassword'
                 name='confirmpassword'
                 type='password'

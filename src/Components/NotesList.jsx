@@ -43,7 +43,7 @@ const NotesList = () => {
           {notes ? (
             <>
               <h1>User Notes</h1>
-              <Card className='grid grid--3--cols'>
+              <Card className='notes-box'>
                 {notes.map((note) => {
                   return (
                     <div className='notes-container'>

@@ -11,6 +11,7 @@ import EditNote from './Components/EditNote'
 import ViewNote from './Components/ViewNote'
 import UsersList from './Components/UsersList'
 import NotesList from './Components/NotesList'
+import Footer from './Components/Footer'
 function App() {
   return (
     <>
@@ -29,6 +30,7 @@ function App() {
         <Route path='/userslist' element={<UsersList />} />
         <Route path='/noteslist' element={<NotesList />} />
       </Routes>
+      <Footer />
     </>
   )
 }

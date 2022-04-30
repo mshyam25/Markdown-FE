@@ -44,7 +44,7 @@ const ResetPassword = () => {
         }
       },
     })
-
+  const textFieldStyles = { style: { fontSize: 14 } }
   useEffect(() => {
     if (error) errorToast(error)
     if (updatedUser) {
@@ -66,6 +66,8 @@ const ResetPassword = () => {
             <span className='secondary-heading'>Reset Password</span>
             <form onSubmit={handleSubmit} className='form-container'>
               <TextField
+                InputProps={textFieldStyles}
+                InputLabelProps={textFieldStyles}
                 id='password'
                 name='password'
                 type='password'
@@ -80,6 +82,8 @@ const ResetPassword = () => {
                 {errors.password && touched.password ? errors.password : ''}
               </span>
               <TextField
+                InputProps={textFieldStyles}
+                InputLabelProps={textFieldStyles}
                 id='confirmpassword'
                 name='confirmpassword'
                 value={values.confirmpassword}

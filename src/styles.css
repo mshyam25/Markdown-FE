@@ -9,7 +9,7 @@
 .flex-row {
   display: flex;
   gap: 2rem;
-  align-items: center;
+
   justify-content: center;
 }
 
@@ -23,7 +23,6 @@
 .grid {
   display: grid;
   align-items: center;
-
   gap: 3.6rem;
   padding: 2.4rem;
 }
@@ -95,7 +94,8 @@
 
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.1);
+  box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.5);
+  background-color: #fefefe;
 }
 
 /* HEADER */
@@ -141,7 +141,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 1.6rem;
   padding: 2rem;
-  box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.1);
+  box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.3);
 }
 .content,
 .markdown {
@@ -151,15 +151,24 @@
   outline: none;
 }
 .content {
-  background-color: black;
+  background-color: #333;
   color: #fefefe;
 }
 
 .markdown {
-  box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.3);
+  background-color: #fefefe;
+  color: #333;
+  box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.5);
 }
 
 /* USER NOTES */
+
+.notes-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 2rem;
+}
 
 .notes-container {
   padding: 3.6rem;
@@ -167,8 +176,25 @@
   flex-direction: column;
   gap: 3.6rem;
   border-radius: 9px;
-  background-color: yellow;
+
   align-self: center;
   justify-self: center;
-  /* box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.1); */
+  background-color: #38d9a9;
+  box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.1);
+}
+
+.footer-section {
+  display: flex;
+  border-top: solid 1px #aaa;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding-top: 0.8rem;
+  background-color: #333;
+  color: #fff;
+}
+.footer-text {
+  font-size: 1.6rem;
 }
