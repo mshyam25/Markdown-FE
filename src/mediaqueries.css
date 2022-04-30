@@ -1,0 +1,109 @@
+/* BELOW 1200px (Small laptops) */
+
+@media (max-width: 75em) {
+  .container {
+    width: 110rem;
+  }
+}
+
+/* BELOW 992px (Landscape tablets) */
+
+@media (max-width: 62em) {
+  .container {
+    width: 80rem;
+  }
+  html {
+    font-size: 56.25%;
+  }
+  .form-container {
+    width: 80%;
+  }
+  .secondary-heading {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .helper-text {
+    font-size: 1.6rem;
+  }
+
+  .links:link,
+  .links:visited {
+    font-size: 1.6rem;
+  }
+}
+
+/* BELOW 768px (Potrait tablets) */
+
+@media (max-width: 48em) {
+  .markdown-area {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+  .container {
+    width: 70rem;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+  .primary-heading {
+    font-size: 2.6rem;
+    font-weight: 500;
+  }
+  .secondary-heading {
+    font-size: 1.9rem;
+    font-weight: 500;
+  }
+
+  .links:link,
+  .links:visited {
+    font-size: 1.6rem;
+  }
+
+  .update-form-container {
+    width: 100%;
+  }
+}
+
+/* BELOW 592px (Small tablets) */
+
+@media (max-width: 37rem) {
+  .container {
+    width: 50rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .secondary-heading {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .helper-text {
+    font-size: 1.4rem;
+  }
+
+  .links:link,
+  .links:visited {
+    font-size: 1.6rem;
+  }
+  .btn {
+    padding: 0.6rem 1.3rem;
+    font-size: 1.6rem;
+    border-radius: 0;
+    width: 40%;
+  }
+}
+
+/* BELOW 400px (Phones) */
+
+@media (max-width: 25rem) {
+  html {
+    font-size: 45%;
+  }
+  .content,
+  .markdown {
+    gap: 1.2rem;
+    height: 25rem;
+  }
+}

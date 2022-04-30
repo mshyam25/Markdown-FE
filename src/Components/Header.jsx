@@ -14,7 +14,7 @@ const Header = () => {
   }
   return (
     <div className='header'>
-      <Navbar bg='light' expand='lg'>
+      <Navbar bg='dark' variant='dark' expand='lg'>
         <Navbar.Brand href='/'>
           <span className='nav-link'>Markdown</span>
         </Navbar.Brand>

@@ -1,10 +1,9 @@
 /* REPEAT */
-
+/* box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.1); */
 .container {
   margin: 9.6rem auto;
   width: 160rem;
   padding: 4.6rem;
-  height: 80vh;
 }
 
 .flex-row {
@@ -23,14 +22,14 @@
 
 .grid {
   display: grid;
+  align-items: center;
+
   gap: 3.6rem;
   padding: 2.4rem;
-  align-items: center;
-  justify-items: center;
 }
 
-.grid--3--cols {
-  grid-template-columns: repeat(3, 1fr);
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .primary-heading {
@@ -58,6 +57,7 @@
 .links:visited {
   text-decoration: none;
   color: #1c7ed6;
+  font-size: 1.8rem;
 }
 
 .btn-container {
@@ -76,8 +76,11 @@
 
 .btn {
   padding: 1rem 1.6rem;
-  font-size: 1.8rem;
-  border-radius: 9px;
+  font-size: 1.5rem;
+}
+
+.margin-bt {
+  margin-bottom: 1.6rem;
 }
 
 /*SIGN IN*/
@@ -98,7 +101,7 @@
 /* HEADER */
 
 .header {
-  padding: 0 3.2rem;
+  padding: 0;
 }
 .nav-link {
   font-size: 2.4rem;
@@ -107,7 +110,7 @@
 /* USER PROFILE */
 
 .update-section {
-  border-radius: 12px;
+  border-radius: 9px;
   box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.1);
 }
 
@@ -124,8 +127,8 @@
 .markdown-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  font-size: 2rem;
+  gap: 3.2rem;
+  font-size: 2.4rem;
 }
 .title-box {
   display: flex;
@@ -137,8 +140,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.6rem;
-  padding: 1.6rem;
-  border: solid 1px red;
+  padding: 2rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.1);
 }
 .content,
 .markdown {
@@ -147,9 +150,13 @@
   padding: 3.2rem;
   outline: none;
 }
+.content {
+  background-color: black;
+  color: #fefefe;
+}
 
 .markdown {
-  border: solid 1px #454545;
+  box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.3);
 }
 
 /* USER NOTES */
@@ -159,6 +166,9 @@
   display: flex;
   flex-direction: column;
   gap: 3.6rem;
-  border-radius: 12px;
-  box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.1);
+  border-radius: 9px;
+  background-color: yellow;
+  align-self: center;
+  justify-self: center;
+  /* box-shadow: 0 2.4rem 4.8rem rgba(32, 27, 27, 0.1); */
 }

@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import TextField from '@mui/material/TextField'
-import { Button } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { errorToast, infoToast, successToast } from '../utils'
@@ -40,7 +40,7 @@ const MarkdownArea = () => {
     }
     dispatch(newNote(Note))
   }
-
+  const textFieldStyles = { style: { fontSize: 14 } }
   useEffect(() => {
     if (!userInfo) {
       navigate('/signin')
@@ -63,6 +63,8 @@ const MarkdownArea = () => {
         <>
           <div className='title-box'>
             <TextField
+              InputProps={textFieldStyles}
+              InputLabelProps={textFieldStyles}
               id='name'
               name='name'
               value={title}
@@ -70,19 +72,21 @@ const MarkdownArea = () => {
               variant='standard'
               onChange={(e) => setTitle(e.target.value)}
             />
-            <Button variant='info' className='btn'>
+            <Button variant='primary' className='btn'>
               Add Title
             </Button>
           </div>
-          <div className='markdown-area'>
+          <Card className='markdown-area'>
             <textarea
               autoFocus
               className='content'
               value={input}
               onChange={(e) => handleChange(e)}
             />
-            <ReactMarkdown className='markdown' children={input} />
-          </div>
+            <Card>
+              <ReactMarkdown className='markdown' children={input} />
+            </Card>
+          </Card>
           <div className='btn-container'>
             <Button
               type='submit'

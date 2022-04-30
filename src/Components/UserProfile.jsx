@@ -102,7 +102,7 @@ const UserProfile = () => {
         ) : (
           <Card className='flex-col update-section'>
             <Card.Body>
-              <Card.Title className='primary-heading'>
+              <Card.Title className='primary-heading margin-bt'>
                 {userInfo.name} : {userInfo.email}
               </Card.Title>
               <div className='btn-container-2'>
@@ -186,11 +186,11 @@ const UserProfile = () => {
 
                   <div className='btn-container'>
                     <Button type='submit' className='btn' variant='success'>
-                      Update Details
+                      Update
                     </Button>
 
                     <Button
-                      variant='info'
+                      variant='danger'
                       className='btn'
                       onClick={() => handleCancelEdit()}>
                       {' '}

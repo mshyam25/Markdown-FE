@@ -72,7 +72,9 @@ const SignIn = () => {
                 onBlur={handleBlur}
                 error={errors.email && touched.email}
               />
-              <span>{errors.email && touched.email ? errors.email : ''}</span>
+              <span className='helper-text'>
+                {errors.email && touched.email ? errors.email : ''}
+              </span>
               <TextField
                 id='password'
                 name='password'
@@ -84,7 +86,7 @@ const SignIn = () => {
                 onBlur={handleBlur}
                 error={errors.password && touched.password}
               />
-              <span>
+              <span className='helper-text'>
                 {errors.password && touched.password ? errors.password : ''}
               </span>
               <a href='/forgotpassword' className='links'>
@@ -96,7 +98,7 @@ const SignIn = () => {
                 </Button>{' '}
               </div>
               <div className='btn-container'>
-                <span className='text-field'>
+                <span className='helper-text'>
                   New Customer ?{' '}
                   <a href='/signup' className='links'>
                     Sign Up
